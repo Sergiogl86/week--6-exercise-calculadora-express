@@ -13,4 +13,11 @@ router.get("/", (req, res) => {
   res.json({ a, b, multiplicacion: multiplicacion(a, b) });
 });
 
+router.use("/", (req, res) => {
+  res.json({
+    error: true,
+    message: "No permitido",
+  });
+});
+
 module.exports = router;
