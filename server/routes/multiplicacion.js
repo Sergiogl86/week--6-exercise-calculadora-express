@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
 });
 
 router.use("/", (req, res) => {
-  res.json({
+  res.status(403).json({
     error: true,
     message: "No permitido",
   });
