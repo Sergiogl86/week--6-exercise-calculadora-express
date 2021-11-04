@@ -1,7 +1,7 @@
 const debug = require("debug")("calculator:errors");
 
 const notFoundErrorHandler = (req, res) => {
-  res.status(404).json({ error: "Endpoint not found" });
+  res.status(404).json({ error: true, message: "End point incorrecto" });
 };
 
 // eslint-disable-next-line no-unused-vars
